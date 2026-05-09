@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffd6e7;
+    overflow-x: hidden;
+}
+
+/* HOME PAGE */
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: hotpink;
+    font-size: 4rem;
+    margin-bottom: 60px;
+}
+
+#runawayBtn {
+    position: absolute;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 40px;
+    background: hotpink;
+    color: white;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.secret-link {
+    display: block;
+    margin-top: 180px;
+    color: deeppink;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* QUIZ PAGE */
+
+.scroll-prompt {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 105, 180, 0.85);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    user-select: none;
+}
+
+.quiz-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.quiz-container {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-container h1 {
+    text-align: center;
+    color: hotpink;
+}
+
+.question {
+    margin: 25px 0;
+}
+
+.question p {
+    color: #ff4f93;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: 2px solid pink;
+    outline: none;
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 25px;
+    background: hotpink;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* ALBUM PAGE */
+
+.album-page {
+    margin: 0;
+    overflow: hidden;
+    background: #ffd6e7;
+    font-family: Arial, sans-serif;
+}
+
+.album-title {
+    text-align: center;
+    color: hotpink;
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;      
+    margin-top: 0px; 
+}
+
+.photo-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.photo-row::-webkit-scrollbar {
+    display: none;
+}
+
+.photo-row img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 25px;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.photo-row img:hover {
+    transform: scale(1.05);
+}
